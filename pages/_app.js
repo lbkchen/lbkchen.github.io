@@ -1,4 +1,6 @@
 import App from "next/app";
+import Head from "next/head";
+
 import React from "react";
 import { PageTransition } from "next-page-transitions";
 
@@ -17,6 +19,9 @@ class MyApp extends App {
     const { Component, pageProps, router } = this.props;
     return (
       <div>
+        <Head>
+          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+        </Head>
         <PageTransition timeout={300} classNames="page-transition">
           <Component {...pageProps} key={router.route} />
         </PageTransition>
