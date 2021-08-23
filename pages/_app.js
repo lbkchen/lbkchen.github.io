@@ -2,7 +2,7 @@ import App from "next/app";
 import React from "react";
 import { PageTransition } from "next-page-transitions";
 
-export default class MyApp extends App {
+class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
 
@@ -40,3 +40,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default MyApp;

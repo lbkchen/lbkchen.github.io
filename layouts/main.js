@@ -3,7 +3,7 @@ import Link from "next/link";
 import Globals from "../components/globals";
 import theme from "../styles/theme";
 
-export default ({ children }) => (
+const MainLayout = ({ children }) => (
   <div className="main">
     <Link href="/">
       <a className="logo-text">
@@ -56,3 +56,5 @@ export default ({ children }) => (
     </style>
   </div>
 );
+
+export default MainLayout;
