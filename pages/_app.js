@@ -1,4 +1,4 @@
-import App, { Container } from "next/app";
+import App from "next/app";
 import React from "react";
 import { PageTransition } from "next-page-transitions";
 
@@ -16,7 +16,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props;
     return (
-      <Container>
+      <div>
         <PageTransition timeout={300} classNames="page-transition">
           <Component {...pageProps} key={router.route} />
         </PageTransition>
@@ -36,7 +36,7 @@ export default class MyApp extends App {
             transition: opacity 300ms;
           }
         `}</style>
-      </Container>
+      </div>
     );
   }
 }
