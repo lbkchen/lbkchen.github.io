@@ -1,10 +1,11 @@
 import Head from "next/head";
+import * as React from "react";
 
 import Page from "../../layouts/main";
-import { H2, H3 } from "../../components/typography/heading";
+import { H2 } from "../../components/typography/heading";
 import P from "../../components/typography/paragraph";
 
-export default () => (
+const SamsaraTractorTrailerPage: React.FC = () => (
   <Page>
     <Head>
       <title>Samsara Tractor Trailer - Ken Chen</title>
@@ -51,3 +52,5 @@ export default () => (
     `}</style>
   </Page>
 );
+
+export default SamsaraTractorTrailerPage;
