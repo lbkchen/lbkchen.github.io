@@ -3,9 +3,9 @@ import Link from "next/link";
 import Globals from "../components/globals";
 import theme from "../styles/theme";
 
-export default ({ children }) => (
+const MainLayout = ({ children }) => (
   <div className="main">
-    <Link prefetch href="/">
+    <Link href="/">
       <a className="logo-text">
         <span className="logo-ken">KEN</span>
         <span> </span>
@@ -56,3 +56,5 @@ export default ({ children }) => (
     </style>
   </div>
 );
+
+export default MainLayout;
