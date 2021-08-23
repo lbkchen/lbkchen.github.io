@@ -2,7 +2,7 @@
   "name": "kenchen-io",
   "version": "2.0.0",
   "description": "Personal portfolio project",
-  "main": "index.js",
+  "main": "pages/index.js",
   "dependencies": {
     "classnames": "^2.2.6",
     "fontfaceobserver": "^2.1.0",
