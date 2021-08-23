@@ -3,8 +3,8 @@ import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
 
 export default class PhotoGallery extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { currentImage: 0 };
   }
 
