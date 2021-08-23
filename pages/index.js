@@ -38,7 +38,7 @@ class Index extends React.Component {
             <P>I’m currently in Tokyo, Japan until August 2019.</P>
           </div>
           <div className="gallery">
-            <Link prefetch scroll={false} href="/projects/japan">
+            <Link scroll={false} href="/projects/japan">
               <a>
                 <Card
                   imgUrl="/static/images/thumbnails/arashiyama-bamboo.jpg"
@@ -62,7 +62,7 @@ class Index extends React.Component {
               </a>
             </Link>
 
-            <Link prefetch scroll={false} href="/blog/samsara-tractor-trailer">
+            <Link scroll={false} href="/blog/samsara-tractor-trailer">
               <a>
                 <Card
                   imgUrl="/static/images/thumbnails/tractor-trailer.jpg"
@@ -74,7 +74,7 @@ class Index extends React.Component {
               </a>
             </Link>
 
-            <Link prefetch scroll={false} href="/projects/maui">
+            <Link scroll={false} href="/projects/maui">
               <a>
                 <Card
                   imgUrl="/static/images/thumbnails/maui.jpg"
@@ -86,7 +86,7 @@ class Index extends React.Component {
               </a>
             </Link>
 
-            <Link prefetch scroll={false} href="/projects/hong-kong">
+            <Link scroll={false} href="/projects/hong-kong">
               <a>
                 <Card
                   imgUrl="/static/images/thumbnails/hong-kong.jpg"

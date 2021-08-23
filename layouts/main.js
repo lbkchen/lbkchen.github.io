@@ -5,7 +5,7 @@ import theme from "../styles/theme";
 
 export default ({ children }) => (
   <div className="main">
-    <Link prefetch href="/">
+    <Link href="/">
       <a className="logo-text">
         <span className="logo-ken">KEN</span>
         <span> </span>
