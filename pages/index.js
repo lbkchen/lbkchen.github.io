@@ -10,15 +10,25 @@ import A from "../components/typography/link";
 import theme from "../styles/theme";
 
 class Index extends React.Component {
+  state = {
+    title: "Ken Chen | Writing hallucinogenic software for humanity",
+  };
+
   componentDidMount() {
     Fonts();
+
+    setTimeout(() => {
+      this.setState({
+        title: "Ken Chen | Software Engineer",
+      });
+    }, 1000);
   }
 
   render() {
     return (
       <Page>
         <Head>
-          <title>Ken Chen</title>
+          <title>{this.state.title}</title>
         </Head>
 
         <div className="home">
